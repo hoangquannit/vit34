@@ -58,8 +58,8 @@ global $woo_options, $woocommerce;
 
 
     <?php woo_header_before(); ?>
-
-	<header id="header" class="col-full">
+	<div class="pageHeader">
+    <header id="header" class="col-full">
 
 
 
@@ -103,5 +103,6 @@ global $woo_options, $woocommerce;
 		<?php woo_nav_after(); ?>
 
 	</header><!-- /#header -->
+	</div>
 
 	<?php woo_content_before(); ?>

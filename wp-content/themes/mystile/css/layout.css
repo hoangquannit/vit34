@@ -1041,3 +1041,8 @@ INDEX
     display: block;
     float: left;
   }
+  .pageHeader {
+    background: #f6f5f0 url(../includes/images/prettyPhoto/default/header.png) repeat;
+    border-top: solid 8px #233654;
+    height: 8.625em;
+  }
