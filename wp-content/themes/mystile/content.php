@@ -26,34 +26,13 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 	$settings = woo_get_dynamic_values( $settings );
  
 ?>
-
-	<article <?php post_class(); ?>>
-		<aside class="meta">
-			<a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>">
-				<?php echo get_avatar( get_the_author_meta('email'), '128' ); ?>
-			</a>
-			<span class="month"><?php the_time( 'M' ); ?></span>
-			<span class="day"><?php the_time( 'd' ); ?></span>
-			<span class="year"><?php the_time( 'o' ); ?></span>
-		</aside>
-		
-		<section class="post-content">
-		    <?php 
-		    	if ( isset( $woo_options['woo_post_content'] ) && $woo_options['woo_post_content'] != 'content' ) { 
-		    		woo_image( 'width=' . $settings['thumb_w'] . '&height=' . $settings['thumb_h'] . '&class=thumbnail ' . $settings['thumb_align'] ); 
-		    	} 
-		    ?>
-		    
-			<header>
-				<h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-				<?php woo_post_meta(); ?>
-			</header>
-	
-			<section class="entry">
+		<article>
+			<?php
+			if ( isset( $woo_options['woo_post_content'] ) && $woo_options['woo_post_content'] != 'content' ) {
+				woo_image( 'width=' . $settings['thumb_w'] . '&height=' . $settings['thumb_h'] . '&class=thumbnail ' . $settings['thumb_align'] );
+			}
+			?>
+			<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail();?></a>
 			<?php if ( isset( $woo_options['woo_post_content'] ) && $woo_options['woo_post_content'] == 'content' ) { the_content( __( 'Continue Reading &rarr;', 'woothemes' ) ); } else { the_excerpt(); } ?>
-			</section>
-	
-			  
-		</section><!--/.post-content -->
-
-	</article><!-- /.post -->
+		</article><!-- /.post -->

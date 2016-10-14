@@ -40,9 +40,6 @@ INDEX
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
   }
-  body {
-    padding: 0 3.631em;
-  }
   table {
     font-size: 1em !important;
   }
@@ -297,10 +294,10 @@ INDEX
   }
   .homepage-banner {
     position: relative;
-    max-width: 95.949em;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3.631em;
+    margin-bottom: 0px;
     display: block;
   }
   .homepage-banner img {
@@ -359,7 +356,6 @@ INDEX
     right: 0;
     z-index: 50;
     bottom: 0;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC);
   }
   .home #content.with-banner {
     border-top: 4px double #e8e4e3;
@@ -599,7 +595,7 @@ INDEX
   .layout-full #main,
   .col-full,
   .no-sidebar #main {
-    max-width: 75.998em;
+    max-width: 85.998em;
     margin: 0 auto;
     width: 100%;
   }
@@ -654,7 +650,7 @@ INDEX
     margin: 0;
   }
   .footer-wrap {
-    background: #f7f7f7;
+    background:url(../includes/images/prettyPhoto/default/bt-bg.png);
     margin: 0 -3.631em;
     padding: 0 3.631em;
   }
@@ -960,3 +956,88 @@ INDEX
     font-size: 1.387em;
   }
 }
+  .shell {
+    width:1200px; margin:0 auto;
+  }
+  #ctas article:first-child {
+    margin: 0;
+  }
+  #ctas article {
+    top: 0;
+  }
+  #ctas article {
+    background: #ffffff !important;
+  }
+  #ctas article {
+    background: #fff;
+    position: relative;
+    top: -52px;
+    float: left;
+    margin: 0 0 0 3%;
+    width: 31.33%;
+  }
+  #ctas article h3 {
+    display: block;
+    line-height: 52px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    background: #21b0d1 !important;
+    margin: 0.618em 0 0 0;
+  }
+  @media only screen and (max-width: 600px){
+    .shell {
+      margin: 0 7%;
+      width: 86%;
+    }
+    #ctas article{
+      margin-left: 0;
+      margin-bottom: 7%;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 723px){
+    #ctas article{
+      margin-left: 0;
+      margin-bottom: 5%;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1300px){
+    .shell {
+      margin: 0 5%;
+      width: 90%;
+    }
+  }
+  #ctas article p {
+    color: #222222 !important;
+  }
+  #ctas article p {
+    color: #222;
+    padding: 25px 30px;
+    text-align: center;
+  }
+  .address {
+    width: 30%;
+    margin: 0 0 0 3.33%;
+    float: left;
+  }
+  .addr_text {
+    width: 90%;
+  }
+  .addr_text {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #de4926;
+    line-height: 1.375em;
+    margin-bottom: 1.250em;
+  }
+  .list_info > li {
+    width: 100%;
+    color: #929191;
+    font-size: 0.98em;
+    line-height: 1.692em;
+    display: block;
+    float: left;
+  }

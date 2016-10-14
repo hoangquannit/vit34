@@ -36,10 +36,8 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 
     	<?php woo_main_before(); ?>
 
-		<section id="main" class="col-left">
-
-		<?php mystile_homepage_content(); ?>
-
+		<section id="ctas" class="col-left">
+        <div class="shell clearfix">
 		<?php woo_loop_before(); ?>
 
 		<?php if ( isset( $woo_options[ 'woo_homepage_blog' ] ) && $woo_options[ 'woo_homepage_blog' ] == "true" ) {
@@ -83,12 +81,15 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
         <?php } // End query to see if the blog should be displayed ?>
 
         <?php woo_loop_after(); ?>
-
+		</div>
+		<?php mystile_homepage_content(); ?>
 		</section><!-- /#main -->
 
 		<?php woo_main_after(); ?>
 
-        <?php if ( isset( $woo_options[ 'woo_homepage_sidebar' ] ) && $woo_options[ 'woo_homepage_sidebar' ] == "true" ) get_sidebar(); ?>
+
+
+		<?php if ( isset( $woo_options[ 'woo_homepage_sidebar' ] ) && $woo_options[ 'woo_homepage_sidebar' ] == "true" ) get_sidebar(); ?>
 
     </div><!-- /#content -->
 
