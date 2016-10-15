@@ -26,8 +26,6 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 				if ( $woo_options[ 'woo_homepage_banner' ] == "true" && is_ssl() ) { $banner = preg_replace("/^http:/", "https:", $woo_options['woo_homepage_banner_path']); }
 			?>
 			    <img src="<?php echo $banner; ?>" alt="" />
-    		<h1><span><?php echo $woo_options['woo_homepage_banner_headline']; ?></span></h1>
-    		<div class="description"><?php echo wpautop($woo_options['woo_homepage_banner_standfirst']); ?></div>
     	</div>
 
     <?php } ?>
@@ -37,6 +35,12 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
     	<?php woo_main_before(); ?>
 
 		<section id="ctas" class="col-left">
+            <div class="row">
+                <h3 class="text_head_31">
+                    <?php echo $woo_options['woo_homepage_banner_headline']; ?>
+                </h3>
+                <div class="text_1 text-center"><?php echo wpautop($woo_options['woo_homepage_banner_standfirst']); ?></div>
+            </div>
         <div class="shell clearfix">
 		<?php woo_loop_before(); ?>
 

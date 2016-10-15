@@ -993,6 +993,7 @@ INDEX
     .shell {
       margin: 0 7%;
       width: 86%;
+      padding: 9.375em  0;
     }
     #ctas article{
       margin-left: 0;
@@ -1018,6 +1019,9 @@ INDEX
     .support-number{
         display: none;
     }
+    .row{
+        display: none;
+    }
   }
   @media only screen and (max-width: 1300px){
     .shell {
@@ -1029,6 +1033,7 @@ INDEX
         .shell {
             width:980px;
             margin:0 auto;
+            padding: 4.375em  0;
         }
         .no-sidebar {
             max-width: 980px;
@@ -1042,6 +1047,43 @@ INDEX
             float: right;
             margin-top: 0.45em;
             margin-right: 2.55em;
+        }
+        .text_head_31 {
+            color: #232323;
+            font-weight: normal;
+            font-size: 1.583em;
+            text-align: center;
+            margin-bottom: 0.750em;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text_1 {
+            color: #555;
+            font-size: 1.083em;
+            line-height: 1.375em;
+            text-align: center;
+            text-rendering: auto;
+            letter-spacing: -0.5px;
+        }
+        .wrapper-abs {
+            width: 980px;
+        }
+        .wrapper-abs {
+            width: 74.25%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: auto;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #copyright{
+            width: 980px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -1079,3 +1121,27 @@ INDEX
     margin: 0 -3.631em;
     padding: 0 3.631em;
   }
+    .btFooter {
+        height: 40px;
+        background: #1f1f1f;
+        position: relative;
+    }
+    .power {
+        float: right;
+        margin-top: 1em;
+        color: #929191;
+        font-size: 0.833em;
+    }
+    .copyright-support {
+        font-size: 0.833em;
+        color: #929191;
+        margin-top: 1em;
+        float: left;
+    }
+    #ctas h1 {
+        color: #232323;
+        font-weight: normal;
+        font-size: 1.583em;
+        text-align: center;
+        margin-bottom: 0.750em;
+    }
