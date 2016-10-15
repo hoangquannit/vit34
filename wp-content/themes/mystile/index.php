@@ -92,7 +92,7 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
             <?php if ( have_posts() ) : $count = 0;?>
             <?php /* Start the Loop */ ?>
             <div class="new-sale">
-            <h2> Khuyễn mại</h2>
+            <h2 class="sale-head"> Khuyễn mại</h2>
             <ul class="listOfFood listFix">
             <?php while ( $the_post_sale->have_posts() ) : $the_post_sale->the_post(); $count++; ?>
 

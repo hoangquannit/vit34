@@ -1244,6 +1244,10 @@ INDEX
         padding: 10px 0 15px 115px;
         background: url(../includes/images/prettyPhoto/default/store.png) no-repeat left top;
     }
+    .sale-head {
+        padding: 10px 0 15px 105px;
+        background: url(../includes/images/prettyPhoto/default/sale.png) no-repeat left top;
+    }
     .listOfStores{
         display: inline-block;
         margin: 0;
