@@ -190,7 +190,7 @@ INDEX
   }
   #header #navigation ul.nav > li a {
     border: 1px solid #fcfcfc;
-    background: #fcfcfc;
+    background: #d4d1e0;
     font-weight: bold;
     position: relative;
     -webkit-border-radius: 0.236em;
@@ -361,7 +361,6 @@ INDEX
     bottom: 0;
   }
   .home #content.with-banner {
-    border-top: 4px double #e8e4e3;
     padding-top: 3.631em;
   }
   .archive-header h1 {
@@ -1022,6 +1021,9 @@ INDEX
     .row{
         display: none;
     }
+    .new-sale,.col-rp_39-7{
+        display: none;
+    }
   }
   @media only screen and (max-width: 1300px){
     .shell {
@@ -1047,6 +1049,7 @@ INDEX
             float: right;
             margin-top: 0.45em;
             margin-right: 2.55em;
+            color:#28145c;
         }
         .text_head_31 {
             color: #232323;
@@ -1117,6 +1120,7 @@ INDEX
   .pageHeader {
     background: #f6f5f0 url(../includes/images/prettyPhoto/default/header.png) repeat;
     border-top: solid 8px #28145c;
+    border-bottom: solid 1px #dedae2;
     height: 8.625em;
     margin: 0 -3.631em;
     padding: 0 3.631em;
@@ -1144,4 +1148,119 @@ INDEX
         font-size: 1.583em;
         text-align: center;
         margin-bottom: 0.750em;
+    }
+    .captionLC {
+        position: absolute;
+        top: 8em;
+        left: 0px;
+        background: url(../includes/images/prettyPhoto/default/bg-trans.png) repeat;
+        padding: 25px 25px 35px 25px;
+        width: 30%;
+        font-size: 17px;
+    }
+    .captionLC_list {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .btnFoodOrder {
+        position: absolute;
+        left: 0;
+        bottom: -65px;
+        display: block;
+        font-size: 0.775em;
+        color: #fff;
+        background: #f67429;
+        width: 110px;
+        height: 12px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        float: left;
+        padding: 14px 20px;
+        background: -moz-linear-gradient(top, #f67429 0%, #f67429);
+    }
+    .captionLC_list > li {
+        margin-bottom: 16px;
+        cursor: default;
+        padding-left: 30px;
+        background: url(../includes/images/prettyPhoto/default/list-1.png) no-repeat left center;
+    }
+    .captionLC_list > li > a {
+        font-size: 12px;
+        color: #f7f7f5;
+    }
+    .captionLC_inner {
+        position: relative;
+    }
+    .listFix li {
+        display: inline-block;
+    }
+    .listOfFood > li {
+         width: 100%;
+         padding: 15px 0;
+         border-bottom: dashed 1px #ccc3b2;
+     }
+    .listFix li a.photo {
+        width: 140px;
+        float: left;
+    }
+    .listOfFood > li a.photo {
+        display: block;
+        height: 90px;
+    }
+    .food_info {
+        vertical-align: top;
+        margin-left: 150px;
+    }
+    .text_2 {
+        font-size: 0.875em;
+        color: #313131;
+        line-height: 1.375em;
+    }
+    .pv_5_10 {
+        margin: 5px 0 10px 0;
+    }
+    .viewDetail {
+        display: block;
+        padding-right: 1.125em;
+        position: relative;
+        color: #1e1e1e;
+        font-family: "Segoe UI";
+        font-size: 0.888em;
+        float: right;
+    }
+    .new-sale{
+        width: 50%;
+        float: left;
+    }
+    .col-rp_39-7 {
+        width: 39.795%;
+        float: right;
+        position: relative;
+    }
+    .sys_stores_head {
+        min-height: 65px;
+        padding: 10px 0 15px 115px;
+        background: url(../includes/images/prettyPhoto/default/store.png) no-repeat left top;
+    }
+    .listOfStores{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .listOfStores > li {
+        background: url(../includes/images/prettyPhoto/default/map-icon.png) no-repeat left top;
+        margin-bottom: 0.938em;
+        padding: 0 0 0 30px;
+    }
+    .product-recent{
+        float: left;
+    }
+    .listOfStores > li > p {
+        font-size: 0.985em;
+        color: #555;
+        font-weight: bold;
+        margin-bottom: 5px;
     }
