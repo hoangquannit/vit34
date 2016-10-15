@@ -99,7 +99,7 @@ global $woo_options, $woocommerce;
 	        <?php } ?>
 
 		</nav><!-- /#navigation -->
-
+        <h2 class="support-number"><?php bloginfo( 'description' ); ?></h2>
 		<?php woo_nav_after(); ?>
 
 	</header><!-- /#header -->

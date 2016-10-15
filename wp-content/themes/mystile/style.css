@@ -315,6 +315,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  padding: 0 1.618em;
   background: #fcfcfc;
 }
 img {
@@ -597,6 +598,7 @@ ul.nav li a {
 #header #logo {
   float: left;
   margin-bottom: 1.618em;
+  margin-left: 7.518em;
 }
 #header .site-title,
 #header .site-description {
