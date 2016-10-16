@@ -52,7 +52,7 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 		<?php
 
 			$the_query = new WP_Query( array( 'posts_per_page' => $postsperpage,'cat' => 38 ) );
-            $the_post_sale =  new WP_Query( array( 'posts_per_page' => $postsperpage,'cat' => 24 ) );
+            $the_post_sale =  new WP_Query( array( 'posts_per_page' => 2,'cat' => 24 ) );
             $the_list_store =  new WP_Query( array('cat' => 39 ) );
 
         	if ( have_posts() ) : $count = 0;
@@ -92,7 +92,7 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
             <?php if ( have_posts() ) : $count = 0;?>
             <?php /* Start the Loop */ ?>
             <div class="new-sale">
-            <h2 class="sale-head"> Khuyễn mại</h2>
+            <h2 class="sale-head"> Khuyến mại</h2>
             <ul class="listOfFood listFix">
             <?php while ( $the_post_sale->have_posts() ) : $the_post_sale->the_post(); $count++; ?>
 

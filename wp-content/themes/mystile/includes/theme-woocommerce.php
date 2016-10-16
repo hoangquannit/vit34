@@ -55,14 +55,17 @@ add_action('woocommerce_after_main_content', 'woocommerce_mystile_after_content'
 if (!function_exists('woocommerce_mystile_before_content')) {
 	function woocommerce_mystile_before_content() {
 		?>
+        <?php if(is_shop()): ?>
+            <div class="slider-shop">
+               <?php echo do_shortcode("[R-slider id='1']"); ?>
+            </div>
+        <?php endif;?>
 		<!-- #content Starts -->
 		<?php woo_content_before(); ?>
-	    <div id="content" class="col-full">
-
-	        <!-- #main Starts -->
+	    <div id="content" class="col-full <?php if(is_shop()) echo "main-shop"?>">
+        <!-- #main Starts -->
 	        <?php woo_main_before(); ?>
-	        <div id="main" class="col-left">
-
+	        <div id="main" class="col-left <?php if(is_shop()) echo "main-shop-1"?>">
 	    <?php
 	}
 }
@@ -74,7 +77,39 @@ if (!function_exists('woocommerce_mystile_after_content')) {
 
 			</div><!-- /#main -->
 	        <?php woo_main_after(); ?>
+        <?php if(is_shop()): ?>
+            <?php
+                $the_post_sale =  new WP_Query( array( 'posts_per_page' => 5,'cat' => 24 ) );
+             ?>
 
+            <?php if ( have_posts() ) : $count = 0;?>
+                <?php /* Start the Loop */ ?>
+                <div class="col-rp_31-6">
+                    <div class="promotion_box">
+                    <h2 class="text_head_21"> Khuyến mại</h2>
+                    <ul class="listOfFood listFix">
+                        <?php while ( $the_post_sale->have_posts() ) : $the_post_sale->the_post(); $count++; ?>
+
+                            <?php
+                            /* Include the Post-Format-specific template for the content.
+                             * If you want to overload this in a child theme then include a file
+                             * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                             */
+                            get_template_part( 'content-sale-shop', get_post_format() );
+                            ?>
+
+                        <?php
+                        endwhile;
+                        ?>
+                    </ul>
+                    </div>
+                </div>
+                <?php
+                // Reset Post Data
+                wp_reset_postdata();
+            endif;
+            ?>
+        <?php endif; //  endif shop page ?>
 	    </div><!-- /#content -->
 		<?php woo_content_after(); ?>
 	    <?php
