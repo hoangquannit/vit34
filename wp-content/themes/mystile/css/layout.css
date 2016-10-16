@@ -202,14 +202,15 @@ INDEX
   #header #navigation ul.nav > li a:hover {
     border-color: #e8e4e3;
     background: #fff;
+    color: #28145c;
   }
   #header #navigation ul.nav > li:hover a {
-    border-color: #e8e4e3;
+    border-color: #28145c;
     background: #fff;
   }
   #header #navigation ul.nav > li.current-menu-item > a,
   #header #navigation ul.nav > li.current_page_item > a {
-    color: #ff4800;
+    color: #28145c;
   }
   #header #navigation ul.nav > li.parent a {
     -webkit-border-bottom-left-radius: 0;
@@ -226,7 +227,7 @@ INDEX
     font-size: .857em;
     margin-left: .618em;
     content: ";";
-    color: #e3dad7;
+    color: #28145c;
     font-weight: normal;
   }
   #header #navigation ul.nav > li.parent a:hover:before {
@@ -1036,6 +1037,10 @@ INDEX
     #main{
         margin-top: 5em;
     }
+    .col-lp_65-5{
+       width: 100%;
+       float: none;
+    }
   }
   @media only screen and (max-width: 1300px){
     .shell {
@@ -1106,6 +1111,17 @@ INDEX
             position: relative;
             margin-left: auto;
             margin-right: auto;
+        }
+        .col-lp_65-5 {
+            width: 62.510%;
+            position: relative;
+            float: left;
+        }
+        .store-list-new{
+            width: 34.795%!important;
+        }
+        .main-shop-1{
+            margin-top: 0px!important;
         }
     }
 
@@ -1355,4 +1371,42 @@ INDEX
         font-weight: normal;
         font-size: 1.583em;
         text-align: center;
+    }
+
+    .text_head_11 {
+        color: #3a3a3a;
+        font-size: 1.708em;
+        padding: 0.425em 0;
+        border-bottom: solid 2px #cdcbc6;
+        font-weight: normal;
+        line-height: 27px;
+    }
+    .list_of_fn {
+        width: 100%;
+    }
+    .list_of_fn a.photo {
+        display: block;
+        float: left;
+        width: 146px;
+        height: 104px;
+        margin-right: 15px;
+    }
+    .list_of_fn .r {
+        vertical-align: top;
+        margin-left: 160px;
+        line-height: 16px;
+    }
+    .text_2 {
+        font-size: 0.99em;
+        color: #313131;
+        line-height: 1.375em;
+    }
+    .pv_5_10 {
+        margin: 5px 0 10px 0;
+    }
+    .list_of_fn > li {
+        width: 100%;
+        padding: 2.2em 0;
+        border-bottom: solid 1px #ccc3b2;
+        list-style: none;
     }
