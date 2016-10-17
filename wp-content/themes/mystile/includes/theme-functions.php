@@ -206,7 +206,7 @@ if (!function_exists( 'woo_subscribe_connect')) {
 
 		<?php if ( $settings['connect_related' ] == "true" AND $related_posts != '' ) : ?>
 		<div class="related-posts col-right">
-			<h4><?php _e( 'Related Posts:', 'woothemes' ); ?></h4>
+			<h4><?php _e( 'Tin liên quan', 'woothemes' ); ?></h4>
 			<?php echo $related_posts; ?>
 		</div><!-- col-right -->
 		<?php wp_reset_query(); endif; ?>

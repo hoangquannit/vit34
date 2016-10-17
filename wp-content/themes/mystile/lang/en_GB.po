@@ -1271,7 +1271,7 @@ msgstr ""
 #: includes/theme-functions.php:268
 #@ woothemes
 msgid "Related Posts:"
-msgstr ""
+msgstr "Tin liên quan"
 
 #: includes/theme-functions.php:290
 #@ woothemes

@@ -1041,6 +1041,9 @@ INDEX
        width: 100%;
        float: none;
     }
+    .ajax_add_to_cart{
+       margin: 0 0.827em!important;
+    }
   }
   @media only screen and (max-width: 1300px){
     .shell {
@@ -1122,6 +1125,12 @@ INDEX
         }
         .main-shop-1{
             margin-top: 0px!important;
+        }
+        .up-sells .ajax_add_to_cart{
+            margin: 0 2.327em!important;
+        }
+        .product-recent  .ajax_add_to_cart{
+            margin: 0 2.327em!important;
         }
     }
 
@@ -1410,3 +1419,7 @@ INDEX
         border-bottom: solid 1px #ccc3b2;
         list-style: none;
     }
+    .products h3{
+        font-size: 16px;
+    }
+
