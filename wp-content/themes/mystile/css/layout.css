@@ -190,7 +190,7 @@ INDEX
   }
   #header #navigation ul.nav > li a {
     border: 1px solid #fcfcfc;
-    background: #28145c;
+    background: #483671;
     font-weight: bold;
     position: relative;
     -webkit-border-radius: 0.236em;
@@ -213,7 +213,7 @@ INDEX
   }
   #header #navigation ul.nav > li.current-menu-item > a,
   #header #navigation ul.nav > li.current_page_item > a {
-    color: #fff;
+    color: #faea23;
   }
   #header #navigation ul.nav > li.parent a {
     -webkit-border-bottom-left-radius: 0;
@@ -985,11 +985,11 @@ INDEX
   #ctas article h3 {
     display: block;
     line-height: 52px;
-    color: #28145c;
+    color: #483671;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    background: #28145c !important;
+    background: #483671 !important;
     margin: 0.618em 0 0 0;
   }
   #ctas article h3 a {
@@ -1103,7 +1103,7 @@ INDEX
             width: 980px;
         }
         .wrapper-abs {
-            width: 74.25%;
+            width: 980px;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -1152,7 +1152,7 @@ INDEX
   .addr_text {
     font-size: 1.4em;
     font-weight: bold;
-    color: #de4926;
+    color: #fff;
     line-height: 1.375em;
     margin-bottom: 1.250em;
   }
@@ -1166,7 +1166,7 @@ INDEX
   }
   .pageHeader {
     background: #f6f5f0 url(../includes/images/prettyPhoto/default/header.png) repeat;
-    border-top: solid 8px #28145c;
+    border-top: solid 8px #483671;
     border-bottom: solid 1px #dedae2;
     height: 8.625em;
     margin: 0 -3.631em;
@@ -1174,19 +1174,19 @@ INDEX
   }
     .btFooter {
         height: 40px;
-        background: #1f1f1f;
+        background: #483671;
         position: relative;
     }
     .power {
         float: right;
-        margin-top: 1em;
+        margin: 1em 3.33% 0 0;;
         color: #929191;
         font-size: 0.833em;
     }
     .copyright-support {
         font-size: 0.833em;
         color: #929191;
-        margin-top: 1em;
+        margin: 1em 0 0 3.33%;
         float: left;
     }
     #ctas h1 {
