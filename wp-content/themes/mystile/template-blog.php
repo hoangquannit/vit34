@@ -58,7 +58,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
         	query_posts( $query_args );
         ?>
             <div class="col-lp_65-5">
-                <h1 class="text_head_11">Tin ẩm thực</h1>
+                <h1 class="text_head_11">Giới thiệu về chúng tôi</h1>
                 <ul class="list_of_fn">
         <?php	if ( have_posts() ) {
         		$count = 0;
