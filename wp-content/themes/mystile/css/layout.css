@@ -1072,14 +1072,17 @@ INDEX
             float: left;
         }
         .support-number{
-            float: right;
             margin-top: 0.45em;
             margin-right: 2.55em;
             color:#28145c;
+            font-size: 1.418em;
             /*-webkit-animation: my 700ms infinite;*/
             /*-moz-animation: my 700ms infinite;*/
             /*-o-animation: my 700ms infinite;*/
             /*animation: my 700ms infinite;*/
+        }
+        .hotline{
+            list-style: none;
         }
         .text_head_31 {
             color: #232323;
@@ -1180,14 +1183,20 @@ INDEX
     .power {
         float: right;
         margin: 1em 3.33% 0 0;;
-        color: #929191;
+        color: #fff833;
         font-size: 0.833em;
+    }
+    .power a{
+        color: #fff833;
     }
     .copyright-support {
         font-size: 0.833em;
         color: #929191;
         margin: 1em 0 0 3.33%;
         float: left;
+    }
+    .copyright-support a{
+        color:#fff833 ;
     }
     #ctas h1 {
         color: #232323;

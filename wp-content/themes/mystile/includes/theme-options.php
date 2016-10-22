@@ -321,6 +321,25 @@ $options[] = array( 'name' => __( 'Main Layout', 'woothemes' ),
 	    				'std' => 'We hand make the most awesomest products in the world',
 	    				'class' => 'hidden',
 	    				'type' => 'textarea' );
+    $options[] = array( 'name' => __( 'Hotline CS1', 'woothemes' ),
+                        'desc' => __( 'The phone number hotline on menu.', 'woothemes' ),
+                        'id' => $shortname . '_homepage_phone_hotline1',
+                        'std' => 'CS1-34 Mỹ Đình : 093 888 8834',
+                        'class' => 'hidden',
+                        'type' => 'text' );
+
+    $options[] = array( 'name' => __( 'Hotline CS3', 'woothemes' ),
+                        'desc' => __( 'The phone number hotline on menu.', 'woothemes' ),
+                        'id' => $shortname . '_homepage_phone_hotline2',
+                        'std' => 'CS2 -Nhà C4 Nguyễn Cơ Thạch : 04 6253 6697',
+                        'class' => 'hidden',
+                        'type' => 'text' );
+    $options[] = array( 'name' => __( 'Chú thích đặt hàng', 'woothemes' ),
+                        'desc' => __( 'The phone number hotline on menu.', 'woothemes' ),
+                        'id' => $shortname . '_homepage_note_order',
+                        'std' => 'Nếu đi đông đặt trước 2h',
+                        'class' => 'hidden',
+                        'type' => 'text' );
 
 	$options[] = array( 'name' => __( 'Banner text colour', 'woothemes' ),
 	    				'desc' => __( 'Pick a custom color for the text overlayed on the banner', 'woothemes' ),

@@ -99,7 +99,11 @@ global $woo_options, $woocommerce;
 	        <?php } ?>
 
 		</nav><!-- /#navigation -->
-        <h2 class="support-number"><?php bloginfo( 'description' ); ?></h2>
+        <ul class="hotline">
+            <li><h2 class="support-number"><?php echo $woo_options['woo_homepage_phone_hotline1']; ?></h2></li>
+            <li><h2 class="support-number"><?php echo $woo_options['woo_homepage_phone_hotline2']; ?></h2></li>
+        </ul>
+        <h2 class="support-number note-order"><?php echo $woo_options['woo_homepage_note_order']; ?></h2>
 		<?php woo_nav_after(); ?>
 
 	</header><!-- /#header -->
