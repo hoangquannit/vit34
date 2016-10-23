@@ -91,12 +91,9 @@ if (!function_exists( 'woo_post_meta')) {
 ?>
 <aside class="post-meta">
 	<ul>
-		<li class="post-category">
-			<?php the_category( ', ') ?>
-		</li>
 		<?php the_tags( '<li class="tags">', ', ', '</li>' ); ?>
 		<?php if ( isset( $woo_options['woo_post_content'] ) && $woo_options['woo_post_content'] == 'excerpt' ) { ?>
-			<li class="comments"><?php comments_popup_link( __( 'Leave a comment', 'woothemes' ), __( '1 Comment', 'woothemes' ), __( '% Comments', 'woothemes' ) ); ?></li>
+			<li class="comments"><?php comments_popup_link( __( 'Phản hồi', 'woothemes' ), __( '1 Comment', 'woothemes' ), __( '% Comments', 'woothemes' ) ); ?></li>
 		<?php } ?>
 		<?php edit_post_link( __( 'Edit', 'woothemes' ), '<li class="edit">', '</li>' ); ?>
 	</ul>
@@ -228,7 +225,7 @@ if (!function_exists( 'woo_subscribe_connect')) {
 
 			$commenter = wp_get_current_commenter();
 
-			$required_text = ' <span class="required">(' . __( 'Required', 'woothemes' ) . ')</span>';
+			$required_text = ' <span class="required">(' . __( 'bắt buộc', 'woothemes' ) . ')</span>';
 
 			$req = get_option( 'require_name_email' );
 			$aria_req = ( $req ? " aria-required='true'" : '' );
@@ -240,10 +237,6 @@ if (!function_exists( 'woo_subscribe_connect')) {
 				'email'  => '<p class="comment-form-email">' .
 				            '<input id="email" class="txt" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />' .
 				            '<label for="email">' . __( 'Email' ) . ( $req ? $required_text : '' ) . '</label> ' .
-				            '</p>',
-				'url'    => '<p class="comment-form-url">' .
-				            '<input id="url" class="txt" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" />' .
-				            '<label for="url">' . __( 'Website' ) . '</label>' .
 				            '</p>',
 			);
 

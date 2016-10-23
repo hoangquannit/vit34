@@ -1096,6 +1096,9 @@ INDEX
         #header #logo{
             width: 262px;
         }
+        #header h1{
+            color:#253894 ;
+        }
         .text_head_31 {
             color: #232323;
             font-weight: normal;

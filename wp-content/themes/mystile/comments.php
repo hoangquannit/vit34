@@ -34,7 +34,7 @@ if ( post_password_required() ) { ?>
 <div id="comments">
 
 	<?php if ( ! empty( $comments_by_type['comment'] ) ) { ?>
-		<h2><?php comments_number( __( 'No Responses', 'woothemes' ), __( 'One Response', 'woothemes' ), __( '% Responses', 'woothemes' ) ); ?> <?php _e( 'to', 'woothemes' ); ?> &#8220;<?php the_title(); ?>&#8221;</h2>
+		<h2><?php comments_number( __( 'Phản hồi', 'woothemes' ), __( 'One Response', 'woothemes' ), __( '% Responses', 'woothemes' ) ); ?> <?php _e( 'to', 'woothemes' ); ?> &#8220;<?php the_title(); ?>&#8221;</h2>
 
 		<ol class="commentlist">
 
@@ -67,7 +67,7 @@ if ( post_password_required() ) { ?>
 		// If there are no comments and comments are closed, let's leave a little note, shall we?
 		if ( comments_open() && is_singular() ) { ?>
 			<div id="comments">
-				<h5 class="nocomments"><?php _e( 'No comments yet.', 'woothemes' ); ?></h5>
+				<h5 class="nocomments"><?php _e( 'Chưa có phản hồi', 'woothemes' ); ?></h5>
 			</div>
 		<?php } ?>
 
