@@ -1192,7 +1192,7 @@ INDEX
   }
   .pageHeader {
     background: #f6f5f0 url(../includes/images/prettyPhoto/default/header.png) repeat;
-    border-top: solid 8px #483671;
+    border-top: solid 8px #253894;
     border-bottom: solid 1px #dedae2;
     height: 8.625em;
     margin: 0 -3.631em;
@@ -1214,9 +1214,12 @@ INDEX
     }
     .copyright-support {
         font-size: 0.833em;
-        color: #929191;
+        color: #ffe983;
         margin: 1em 0 0 3.33%;
         float: left;
+    }
+    .page-title,.text_head_22{
+        color: #253894;
     }
     .copyright-support a{
         color:#fff833 ;
@@ -1419,7 +1422,7 @@ INDEX
     }
 
     .text_head_11 {
-        color: #3a3a3a;
+        color: #253894;
         font-size: 1.708em;
         padding: 0.425em 0;
         border-bottom: solid 2px #cdcbc6;
