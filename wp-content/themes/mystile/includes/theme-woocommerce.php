@@ -170,7 +170,7 @@ function woo_wc_search_form( $form ) {
 
     $form = '<li class="search"><form role="search" method="get" id="searchform" action="' . esc_url(home_url( '/' )) . '" >
     <label class="screen-reader-text" for="s">' . __( 'Search Products:' , 'woothemes' ) . '</label>
-    <input type="search" results=5 autosave="'. esc_url(home_url( '/' )) .'" class="input-text" placeholder="'. esc_attr__( 'Search Products', 'woothemes' ) .'" value="' . get_search_query() . '" name="s" id="s" />
+    <input type="search" results=5 autosave="'. esc_url(home_url( '/' )) .'" class="input-text" placeholder="'. esc_attr__( 'Tìm kiếm', 'woothemes' ) .'" value="' . get_search_query() . '" name="s" id="s" />
     <input type="submit" class="button" id="searchsubmit" value="'. esc_attr__( 'Search', 'woothemes' ) .'" />
     <input type="hidden" name="post_type" value="product" />
     </form></li>';
@@ -396,11 +396,11 @@ function header_add_to_cart_fragment( $fragments ) {
 function woocommerce_cart_link() {
 	?>
 	<li class="cart">
-	<a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>" class="cart-parent">
+	<a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e('Xem giỏ hàng', 'woothemes'); ?>" class="cart-parent">
 		<span>
 	<?php
 	echo WC()->cart->get_cart_subtotal();
-	echo '<span class="contents">' . sprintf(_n('%d item', '%d items', WC()->cart->get_cart_contents_count(), 'woothemes'), WC()->cart->get_cart_contents_count() ) . '</span>';
+	echo '<span class="contents">' . sprintf(_n('%d sản phẩm', '%d sản phẩm', WC()->cart->get_cart_contents_count(), 'woothemes'), WC()->cart->get_cart_contents_count() ) . '</span>';
 	?>
 	</span>
 	</a>

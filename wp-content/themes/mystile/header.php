@@ -47,7 +47,7 @@ global $woo_options, $woocommerce;
 				if ( class_exists( 'woocommerce' ) ) {
 					echo '<ul class="nav wc-nav">';
 					woocommerce_cart_link();
-					echo '<li class="checkout"><a href="'.esc_url($woocommerce->cart->get_checkout_url()).'">'.__('Checkout','woothemes').'</a></li>';
+					echo '<li class="checkout"><a href="'.esc_url($woocommerce->cart->get_checkout_url()).'">'.__('Thanh toán','woothemes').'</a></li>';
 					echo get_search_form();
 					echo '</ul>';
 				}
@@ -100,10 +100,9 @@ global $woo_options, $woocommerce;
 
 		</nav><!-- /#navigation -->
         <ul class="hotline">
-            <li><h2 class="support-number"><?php echo $woo_options['woo_homepage_phone_hotline1']; ?></h2></li>
-            <li><h2 class="support-number"><?php echo $woo_options['woo_homepage_phone_hotline2']; ?></h2></li>
+            <li><h2 class="support-number"><span class="address-hotline">CS1 34 Đường Mỹ Đình Từ Liêm: </span><?php echo $woo_options['woo_homepage_phone_hotline1']; ?></h2></li>
+            <li><h2 class="support-number"><span class="address-hotline">CS3 Nhà C4 Nguyễn Cơ Thạch: </span><?php echo $woo_options['woo_homepage_phone_hotline2']; ?></h2></li>
         </ul>
-        <h2 class="support-number note-order"><?php echo $woo_options['woo_homepage_note_order']; ?></h2>
 		<?php woo_nav_after(); ?>
 
 	</header><!-- /#header -->
