@@ -256,8 +256,8 @@ if (!function_exists( 'woo_subscribe_connect')) {
 
 			$settings['comment_notes_before'] = '';
 			$settings['comment_notes_after'] = '';
-			$settings['label_submit'] = __( 'Submit Comment', 'woothemes' );
-			$settings['cancel_reply_link'] = __( 'Click here to cancel reply.', 'woothemes' );
+			$settings['label_submit'] = __( 'Bình luận', 'woothemes' );
+			$settings['cancel_reply_link'] = __( 'Nhấn vào đây để hủy trả lời.', 'woothemes' );
 
 			return $settings;
 

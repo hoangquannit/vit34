@@ -2882,7 +2882,7 @@ button.button {
   background-image: -o-linear-gradient(top, #ff5911, #dd2600);
   /* Opera 11.10+ */
   background-image: linear-gradient(to bottom, #ff5911, #dd2600);
-  border: 1px solid #bb0400;
+
   -webkit-border-radius: 0.202em;
   border-radius: 0.202em;
   -moz-background-clip: padding;
@@ -2917,9 +2917,7 @@ button.button.checkout {
   background-image: linear-gradient(to bottom, #777777, #444444);
   text-shadow: 0 1px 0 #333333;
   border: 1px solid #222222;
-  -webkit-box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #999999, inset 0 -1px #333333;
-  box-shadow: 0 0 0 0.327em rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px #999999, inset 0 -1px #333333;
-}
+ }
 a.button.alt:hover,
 a.comment-reply-link.alt:hover,
 #commentform #submit.alt:hover,
