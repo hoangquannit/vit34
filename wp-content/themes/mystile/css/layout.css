@@ -1473,4 +1473,8 @@ INDEX
     .hotline{
         list-style: none;
     }
+    .single_add_to_cart_button{
+        background: #253894!important;
+        border: none!important;
+    }
 
