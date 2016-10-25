@@ -144,9 +144,6 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
             </div>
             <?php /* end he thong cua hang*/?>
             <div class="clearfix"></div>
-            <div class="product-recent">
-                <?php mystile_homepage_content(); ?>
-            </div>
 		</section><!-- /#main -->
 
 		<?php woo_main_after(); ?>
@@ -154,7 +151,9 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 
 
 		<?php if ( isset( $woo_options[ 'woo_homepage_sidebar' ] ) && $woo_options[ 'woo_homepage_sidebar' ] == "true" ) get_sidebar(); ?>
-
+        <div class="product-recent-slider">
+            <?php echo do_shortcode("[product_slider id='261']"); ?>
+        </div>
     </div><!-- /#content -->
 
 <?php get_footer(); ?>

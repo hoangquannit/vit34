@@ -1346,10 +1346,12 @@ INDEX
         padding: 0;
         list-style: none;
     }
-    .listOfStores > li {
-        background: url(../includes/images/prettyPhoto/default/map-icon.png) no-repeat left top;
-        margin-bottom: 0.938em;
-        padding: 0 0 0 30px;
+    .listOfStores > li a {
+      background: url(../includes/images/prettyPhoto/default/map-icon.png) no-repeat left top;
+      margin-bottom: 0.938em;
+      padding: 0 0 0 30px;
+      height: 21.5px;
+      float: left;
     }
     .product-recent{
         float: left;

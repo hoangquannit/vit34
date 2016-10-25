@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+.product-slider{
+	overflow:hidden;}
+
+.product-slider .grid-items {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product-slider .item {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-slider .item .layer-media{
+line-height: 0;
+}
+
+.product-slider .item .layer-media img {
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+}
+.product-slider .item .layer-media iframe {
+  width: 100% !important;
+  height: auto;
+}
+
+
+.product-slider .owl-theme .owl-controls .owl-buttons div {
+  background: rgb(28, 155, 236) none repeat scroll 0 0;
+}
+
+
+
+
+
+
+/*Grid Element CSS*/
+
+.product-slider .element.wc_add_to_cart {}
+.product-slider .element.wc_add_to_cart p {
+  border: medium none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.product-slider .element.wc_gallery {}
+.product-slider .element.wc_gallery img {
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
+  width: 50px;
+}
+
+.product-slider .element.wc_full_price {}
+.product-slider .element.wc_full_price ins {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+
+
+.product-slider .share_button span {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+
+.product-slider .share_button span{}
+
+.product-slider .share_button span a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.product-slider .share_button .fb {
+  background: rgba(0, 0, 0, 0) url("icons/facebook.png") repeat scroll 0 0 / 100% auto;
+}
+
+.product-slider .share_button .twitter {
+  background: rgba(0, 0, 0, 0) url("icons/twitter.png") repeat scroll 0 0 / 100% auto;
+}
+
+.product-slider .share_button .gplus {
+  background: rgba(0, 0, 0, 0) url("icons/gplus.png") repeat scroll 0 0 / 100% auto;
+}
+
+.product-slider .zoom {
+  background: rgb(221, 221, 221) none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 rgb(153, 153, 153);
+  cursor: pointer;
+  display: inline;
+  line-height: normal;
+  padding: 6px 10px;
+}
+
+
+
+
+

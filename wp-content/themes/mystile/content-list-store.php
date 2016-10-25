@@ -18,5 +18,7 @@ global $woo_options;
  */
 ?>
 <li>
+    <?php $id =  get_the_ID();?>
+    <a href="<?php echo get_post_meta( $id, 'embed', true );?>" class="icon-map" target="_blank"></a>
     <?php if ( isset( $woo_options['woo_post_content'] ) && $woo_options['woo_post_content'] == 'content' ) { the_content( __( 'Continue Reading &rarr;', 'woothemes' ) ); } else { the_excerpt(); } ?>
 </li>
