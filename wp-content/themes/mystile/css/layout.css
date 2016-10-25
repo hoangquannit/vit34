@@ -1057,6 +1057,9 @@ INDEX
         margin-left: 4.518em;
         margin-right: 5em;
     }
+    .product-recent-slider{
+        display: none;
+    }
   }
   @media only screen and (max-width: 1300px){
     .shell {
@@ -1470,7 +1473,7 @@ INDEX
         list-style: none;
     }
     .products h3{
-        font-size: 16px;
+        font-size: 13px;
     }
     .hotline{
         list-style: none;
@@ -1478,5 +1481,8 @@ INDEX
     .single_add_to_cart_button{
         background: #253894!important;
         border: none!important;
+    }
+    .product-recent-slider{
+        margin-bottom: 2em;
     }
 
