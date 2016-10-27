@@ -366,7 +366,10 @@ INDEX
     bottom: 0;
   }
   .home #content.with-banner {
-    padding-top: 0.631em;
+    padding-top: 3.631em;
+  }
+  .home .col-left{
+      margin-top: -3em;
   }
   .archive-header h1 {
     float: left;
