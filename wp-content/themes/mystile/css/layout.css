@@ -366,7 +366,7 @@ INDEX
     bottom: 0;
   }
   .home #content.with-banner {
-    padding-top: 3.631em;
+    padding-top: 0.631em;
   }
   .archive-header h1 {
     float: left;
@@ -607,7 +607,6 @@ INDEX
   }
   #main {
     width: 100%;
-    margin-top: 5em;
   }
   .main-shop-1{
     width: 69.2%!important;
@@ -1221,7 +1220,7 @@ INDEX
     }
     .copyright-support {
         font-size: 0.833em;
-        color: #ffe983;
+        color: #ffe983!important;
         margin: 1em 0 0 3.33%;
         float: left;
     }
@@ -1418,7 +1417,7 @@ INDEX
     .promotion_box > ul > li > a {
           display: block;
           font-size: 0.938em;
-          color: #2a2a2a;
+          color: #253894;
           background: url(../images/list-1.png) no-repeat left 6px;
     }
     .main-shop{
@@ -1493,5 +1492,12 @@ INDEX
     .addr_text{
         color: #fff!important;
     }
+    #slider1_container{
+      border: solid 1px #253894;
+    }
+    .product-name a{
+      color:#253894 ;
+    }
+
 
 
