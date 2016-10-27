@@ -1320,7 +1320,7 @@ INDEX
         display: block;
         padding-right: 1.125em;
         position: relative;
-        color: #1e1e1e;
+        color: #253894;
         font-family: "Segoe UI";
         font-size: 0.888em;
         float: right;
@@ -1485,4 +1485,14 @@ INDEX
     .product-recent-slider{
         margin-bottom: 2em;
     }
+    #product-slider-261 .element_0{
+        color: #253894;
+    }
+    .text_head_32{
+        color: red;
+    }
+    .addr_text{
+        color: #fff!important;
+    }
+
 

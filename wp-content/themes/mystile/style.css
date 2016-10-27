@@ -355,7 +355,7 @@ h4,
 h5,
 h6 {
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #363230;
+  color: #253894 !important;
   margin: 0 0 .618em;
   font-weight: normal;
 }
@@ -405,6 +405,7 @@ form,
 pre,
 hr {
   margin: 0 0 1.618em 0;
+  color: #253894 !important;
 }
 li > ul,
 li > ol {

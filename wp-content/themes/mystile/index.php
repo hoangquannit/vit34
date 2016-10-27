@@ -26,7 +26,6 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 				if ( $woo_options[ 'woo_homepage_banner' ] == "true" && is_ssl() ) { $banner = preg_replace("/^http:/", "https:", $woo_options['woo_homepage_banner_path']); }
 			?>
             <?php echo do_shortcode("[R-slider id='1']"); ?>
-            <div class="captionLC" style="left: 184.5px;"> <div class="captionLC_inner"> <ul class="captionLC_list"> <li><a>Giao Hàng &amp; thu tiền tận nơi</a></li> <li><a>Hỗ trợ đặt hàng trực tuyến &amp; qua điện thoại</a></li> <li><a>Hệ thống tích điểm hấp dẫn dành riêng cho khách hàng</a></li> </ul> <a href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) );?>" class="btnFoodOrder">Đặt món ngay</a> </div> </div>
     	</div>
 
     <?php } ?>
